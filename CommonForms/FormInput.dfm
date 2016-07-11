@@ -1,0 +1,83 @@
+object HInputBox: THInputBox
+  Left = 416
+  Top = 255
+  ActiveControl = Edit
+  BorderStyle = bsDialog
+  Caption = 'HInputBox'
+  ClientHeight = 88
+  ClientWidth = 309
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LbHint: TTntLabel
+    Left = 16
+    Top = 8
+    Width = 285
+    Height = 19
+    AutoSize = False
+    Caption = 'LbHint'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    ParentFont = False
+    Transparent = False
+  end
+  object Edit: TJvValidateEdit
+    Left = 16
+    Top = 30
+    Width = 289
+    Height = 21
+    CheckChars = '01234567890'
+    CriticalPoints.CheckPoints = cpNone
+    CriticalPoints.ColorAbove = clBlue
+    CriticalPoints.ColorBelow = clRed
+    EditText = '0'
+    TabOrder = 2
+    Text = '0'
+    Value = 0
+  end
+  object BnOK: TTntButton
+    Left = 112
+    Top = 56
+    Width = 75
+    Height = 25
+    Caption = '&OK'
+    Default = True
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    ModalResult = 1
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BnCancel: TTntButton
+    Left = 216
+    Top = 56
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = '&Cancel'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    ModalResult = 2
+    ParentFont = False
+    TabOrder = 1
+    Visible = False
+  end
+end

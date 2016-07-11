@@ -1,0 +1,49 @@
+package ZHComponents;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'zh components'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  vclactnband,
+  vclx,
+  JvCoreD7R,
+  vcldb,
+  dbrtl,
+  vcljpg,
+  Jcl,
+  JclVcl,
+  JvStdCtrlsD7R,
+  JvSystemD7R,
+  TntUnicodeVcl_R70,
+  dsnap;
+
+contains
+  TntCheckTreeView in 'TntCheckTreeView.pas',
+  TntValidateEdit in 'TntValidateEdit.pas';
+
+end.
